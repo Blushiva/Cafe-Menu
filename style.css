@@ -3,6 +3,8 @@ body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   /*added font family to body to keep font consistent*/
   font-family: sans-serif;
+  /*added more room around the menu with padding*/
+  padding: 20px;
 }
 /*gave seperate font sizes to h1 and h2*/
 h1 {
@@ -31,6 +33,7 @@ h2 {
     Padding-top: 20px;
     padding-bottom: 20px; long way to write padding*/
     padding: 20px;
+    /*did not want menu to get to big on larger screens so added max-width*/
     max-width: 500px;
     }
 
@@ -41,6 +44,14 @@ h2 {
       /*will surround to default (white)if you don't add this must change the height when adding border color or the line gets bigger*/
       border-color: rgb(60, 58, 58);
     }
+
+    .bottom-line {
+      /*the space between the Cinnamon Roll menu item and the second hr element 
+      does not match the space between the top hr element and the Coffee heading. 
+      so I added more space by creating a class*/
+      margin-top: 25px;
+    }
+
     h1, h2, p {
     /*centered the text*/
     text-align: center;
@@ -53,10 +64,12 @@ h2 {
   
   .item p{ /*displays inline-block for p class*/
       display: inline-block;
-      /*max size so menu wont get to big on big screen*/
-      max-width: 500px;
-      
-  }
+      /*added margin to the top and bottom of the items to avaoid a large gap*/
+      margin-top: 5px;
+      margin-bottom: 5px;
+      /*made the font size of the items and prices larger*/
+      font-size: 18px;
+      }
 
 .flavor,
 .dessert {
@@ -68,3 +81,12 @@ h2 {
   text-align: right;
   width: 25%;
 }
+
+/*footer */
+footer {
+  font-size: 14px;
+}
+a {
+  color: black;
+}
+a:visited { gray: Visit our website; }

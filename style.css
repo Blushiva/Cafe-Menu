@@ -1,75 +1,84 @@
 body {
-  /*added a background image to the body*/
+  /* added a background image to the body */
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-  /*added font family to body to keep font consistent*/
+  /* added font family to body to keep font consistent */
   font-family: sans-serif;
-  /*added more room around the menu with padding*/
+  /* added more room around the menu with padding */
   padding: 20px;
 }
-/*gave seperate font sizes to h1 and h2*/
+
+/* gave separate font sizes to h1 and h2 */
+/*gave h1 a margin-top of 0px to avoid a large gap and removed space from bottom margin of h1 */
 h1 {
   font-size: 40px;
-  }
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
 h2 {
   font-size: 30px;
-  }
-/*added a class selector and gave it a font*/
+}
+
+/* added a class selector and gave it a font */
 .established {
   font-style: italic;
 }
 
 .menu {
-  /*takes up 80% of the screen width*/
-    width: 80%;
-    /*gave the background color in menu*/
-    /*centered the menu*/
-    background-color: rgb(204, 189, 189);
-    margin-left: auto;
-    margin-right: auto;
-    /*gave a bit of padding on each side.
-    padding-left: 20px;
-    padding-right: 20px;
-    /*added top and bottom padding
-    Padding-top: 20px;
-    padding-bottom: 20px; long way to write padding*/
-    padding: 20px;
-    /*did not want menu to get to big on larger screens so added max-width*/
-    max-width: 500px;
-    }
+  /* takes up 80% of the screen width */
+  width: 80%;
+  /* gave the background color in menu */
+  /* centered the menu */
+  background-color: rgb(204, 189, 189);
+  margin-left: auto;
+  margin-right: auto;
+  /* gave a bit of padding on each side */
+  padding: 20px;
+  /* added top and bottom padding */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* did not want menu to get too big on larger screens so added max-width */
+  max-width: 500px;
+}
 
-    /*added a class selector for hr and gave it a height and color*/
-    hr {
-      height: 2px;
-      background-color: rgb(19, 18, 18);
-      /*will surround to default (white)if you don't add this must change the height when adding border color or the line gets bigger*/
-      border-color: rgb(60, 58, 58);
-    }
+/* added a class selector for hr and gave it a height and color */
+hr {
+  height: 2px;
+  background-color: rgb(19, 18, 18);
+  /* will surround to default (white) if you don't add this */
+  /* must change the height when adding border color or the line gets bigger */
+  border-color: rgb(60, 58, 58);
+}
 
-    .bottom-line {
-      /*the space between the Cinnamon Roll menu item and the second hr element 
-      does not match the space between the top hr element and the Coffee heading. 
-      so I added more space by creating a class*/
-      margin-top: 25px;
-    }
+.bottom-line {
+  /* the space between the Cinnamon Roll menu item and the second hr element does not match the space between the top hr element and the Coffee heading */
+  /* so I added more space by creating a class */
+  margin-top: 25px;
+}
 
-    h1, h2, p {
-    /*centered the text*/
-    text-align: center;
-    }
-    /*changed font h1 and h2*/
-    h1, h2 {
-      /*added backup font for h1 and h2*/
-    font-family: Impact, Charcoal, serif;
-    }
-  
-  .item p{ /*displays inline-block for p class*/
-      display: inline-block;
-      /*added margin to the top and bottom of the items to avaoid a large gap*/
-      margin-top: 5px;
-      margin-bottom: 5px;
-      /*made the font size of the items and prices larger*/
-      font-size: 18px;
-      }
+h1,
+h2,
+p {
+  /* centered the text */
+  text-align: center;
+}
+
+/* changed font for h1 and h2 */
+h1,
+h2 {
+  /* added backup font for h1 and h2 */
+  font-family: Impact, Charcoal, serif;
+}
+
+.item p {
+  /* displays inline-block for p class */
+  display: inline-block;
+  /* added margin to the top and bottom of the items to avoid a large gap */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* made the font size of the items and prices larger */
+  font-size: 18px;
+}
 
 .flavor,
 .dessert {
@@ -82,11 +91,25 @@ h2 {
   width: 25%;
 }
 
-/*footer */
+/* footer */
 footer {
   font-size: 14px;
 }
+
+/*makes the link color black */
 a {
   color: black;
 }
-a:visited { gray: Visit our website; }
+/*makes the link color gray after it has been visited */
+a:visited {
+  color: rgb(78, 75, 75);
+}
+
+/* added a hover effect of red to the link */
+a:hover {
+  color: rgb(255, 0, 0);
+}
+/*changes color to white when link is active */
+a:active {
+  color: rgb(255, 0, 0);
+}

@@ -21,7 +21,7 @@ h2 {
     width: 80%;
     /*gave the background color in menu*/
     /*centered the menu*/
-    background-color: burlywood;
+    background-color: rgb(204, 189, 189);
     margin-left: auto;
     margin-right: auto;
     /*gave a bit of padding on each side.
@@ -34,6 +34,13 @@ h2 {
     max-width: 500px;
     }
 
+    /*added a class selector for hr and gave it a height and color*/
+    hr {
+      height: 2px;
+      background-color: rgb(19, 18, 18);
+      /*will surround to default (white)if you don't add this must change the height when adding border color or the line gets bigger*/
+      border-color: rgb(60, 58, 58);
+    }
     h1, h2, p {
     /*centered the text*/
     text-align: center;

@@ -1,11 +1,15 @@
-
-
 body {
   /*added a background image to the body*/
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   /*added font family to body to keep font consistent*/
   font-family: sans-serif;
 }
+
+/*added a class selector and gave it a font*/
+.established {
+  font-style: italic;
+}
+
 .menu {
   /*takes up 80% of the screen width*/
     width: 80%;

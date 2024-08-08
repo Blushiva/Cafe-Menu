@@ -48,6 +48,7 @@ img {
   margin-right: auto;
   /* added a border around the image */
   border: 2px solid black;
+  margin-top: -25px;
 }
 
 /* added a class selector for hr and gave it a height and color */

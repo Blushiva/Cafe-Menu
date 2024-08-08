@@ -1,18 +1,26 @@
 h1, h2, p {
+  /*centered the text*/
   text-align: center;
 }
 
 body {
+  /*added a background image to the body*/
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
 }
 .menu {
+  /*takes up 80% of the screen width*/
     width: 80%;
+    /*gave the background color in menu*/
+    /*centered the menu*/
     background-color: burlywood;
     margin-left: auto;
     margin-right: auto;
+    /*gave a bit of padding on each side.*/
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .item p{
+  .item p{ /*displays inline-block for p class*/
       display: inline-block;
   }
 

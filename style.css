@@ -96,6 +96,10 @@ footer {
   font-size: 14px;
 }
 
+/*closed the gap on the bottom of the footer */
+.address {
+  margin-bottom: 5px;
+}
 /*makes the link color black */
 a {
   color: black;

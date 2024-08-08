@@ -4,7 +4,13 @@ body {
   /*added font family to body to keep font consistent*/
   font-family: sans-serif;
 }
-
+/*gave seperate font sizes to h1 and h2*/
+h1 {
+  font-size: 40px;
+  }
+h2 {
+  font-size: 30px;
+  }
 /*added a class selector and gave it a font*/
 .established {
   font-style: italic;
@@ -25,6 +31,7 @@ body {
     Padding-top: 20px;
     padding-bottom: 20px; long way to write padding*/
     padding: 20px;
+    max-width: 500px;
     }
 
     h1, h2, p {

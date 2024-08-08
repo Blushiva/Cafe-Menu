@@ -29,7 +29,8 @@ body {
     }
     /*changed font h1 and h2*/
     h1, h2 {
-    font-family: Impact;
+      /*added backup font for h1 and h2*/
+    font-family: Impact, Charcoal, serif;
     }
   
   .item p{ /*displays inline-block for p class*/
